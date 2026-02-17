@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ronak Prajapati | Portfolio</title>
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+
+/* Smooth scroll */
+html{
+scroll-behavior:smooth;
+}
+
+/* Dark gradient background */
+body{
+background: linear-gradient(135deg,#020617,#0f172a,#020617);
+color:white;
+min-height:100vh;
+}
+
+/* Background glow circles */
+.bg-circle1{
+position:fixed;
+top:-120px;
+left:-120px;
+width:350px;
+height:350px;
+background:#2563eb;
+border-radius:50%;
+filter:blur(140px);
+opacity:0.4;
+}
+
+.bg-circle2{
+position:fixed;
+bottom:-120px;
+right:-120px;
+width:350px;
+height:350px;
+background:#9333ea;
+border-radius:50%;
+filter:blur(140px);
+opacity:0.4;
+}
+
+/* Glass effect */
+.glass{
+background: rgba(30,41,59,0.6);
+backdrop-filter: blur(10px);
+border-radius:12px;
+border:1px solid rgba(255,255,255,0.1);
+}
+
+/* Hover animation */
+.card{
+transition:0.3s;
+}
+
+.card:hover{
+transform: translateY(-10px);
+box-shadow:0 0 25px rgba(59,130,246,0.5);
+}
+
+/* Button gradient */
+.btn{
+background: linear-gradient(90deg,#2563eb,#9333ea);
+transition:0.3s;
+}
+
+.btn:hover{
+opacity:0.8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Background Effects -->
+<div class="bg-circle1"></div>
+<div class="bg-circle2"></div>
+
+<!-- NAVBAR -->
+<nav class="glass fixed w-full z-50">
+
+<div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+
+<h1 class="text-2xl font-bold text-blue-400">
+Ronak Portfolio
+</h1>
+
+<div class="space-x-6 hidden md:flex">
+
+<a href="#home" class="hover:text-blue-400">Home</a>
+<a href="#about" class="hover:text-blue-400">About</a>
+<a href="#skills" class="hover:text-blue-400">Skills</a>
+<a href="#projects" class="hover:text-blue-400">Projects</a>
+<a href="#contact" class="hover:text-blue-400">Contact</a>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- HERO SECTION -->
+<section id="home"
+class="min-h-screen flex items-center justify-center text-center">
+
+<div>
+
+<img src="file.enc"
+class="w-40 h-40 md:w-48 md:h-48 object-cover rounded-full mx-auto mb-6 
+border-4 border-blue-500 shadow-xl"
+
+<h1 class="text-5xl font-bold mb-4">
+Hi, I'm Ronak Prajapati
+</h1>
+
+<p class="text-xl text-gray-300 mb-6">
+B.Tech Computer Science Student & Web Developer
+</p>
+
+<a href="#contact"
+class="btn px-6 py-3 rounded-full font-semibold">
+
+Contact Me
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="py-20">
+
+<div class="max-w-5xl mx-auto glass p-8 text-center">
+
+<h2 class="text-4xl font-bold mb-4 text-blue-400">
+About Me
+</h2>
+
+<p class="text-gray-300 text-lg">
+
+I am a passionate Computer Science student skilled in HTML5, CSS,
+JavaScript and Tailwind CSS. I love creating modern, responsive
+and user-friendly websites.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- SKILLS SECTION -->
+<section id="skills" class="py-20">
+
+<div class="max-w-6xl mx-auto text-center">
+
+<h2 class="text-4xl font-bold mb-12 text-blue-400">
+My Skills
+</h2>
+
+<div class="grid md:grid-cols-4 gap-6 px-4">
+
+<div class="glass p-6 card">
+<i class="fab fa-html5 text-4xl text-orange-400 mb-2"></i>
+<p>HTML5</p>
+</div>
+
+<div class="glass p-6 card">
+<i class="fab fa-css3 text-4xl text-blue-400 mb-2"></i>
+<p>CSS3</p>
+</div>
+
+<div class="glass p-6 card">
+<i class="fab fa-js text-4xl text-yellow-300 mb-2"></i>
+<p>JavaScript</p>
+</div>
+
+<div class="glass p-6 card">
+<i class="fas fa-wind text-4xl text-cyan-400 mb-2"></i>
+<p>Tailwind CSS</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="py-20">
+
+<div class="max-w-6xl mx-auto text-center">
+
+<h2 class="text-4xl font-bold mb-12 text-blue-400">
+Projects
+</h2>
+
+<div class="grid md:grid-cols-2 gap-6 px-4">
+
+<div class="glass p-6 card">
+
+<h3 class="text-xl font-bold mb-2">
+Portfolio Website
+</h3>
+
+<p class="text-gray-300">
+Personal portfolio using HTML5 and Tailwind CSS.
+</p>
+
+</div>
+
+<div class="glass p-6 card">
+
+<h3 class="text-xl font-bold mb-2">
+Student Website Project
+</h3>
+
+<p class="text-gray-300">
+Responsive academic project website.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="py-20">
+
+<div class="max-w-4xl mx-auto glass p-8 text-center">
+
+<h2 class="text-4xl font-bold mb-6 text-blue-400">
+Contact Me
+</h2>
+
+<form>
+
+<input type="text"
+placeholder="Your Name"
+class="w-full p-3 rounded bg-gray-800 mb-4">
+
+<input type="email"
+placeholder="Your Email"
+class="w-full p-3 rounded bg-gray-800 mb-4">
+
+<textarea
+placeholder="Your Message"
+class="w-full p-3 rounded bg-gray-800 mb-4">
+</textarea>
+
+<button
+type="submit"
+class="btn px-6 py-3 rounded-full font-semibold">
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-6 text-gray-400">
+
+<p>
+© 2026 Ronak Prajapati | All Rights Reserved
+</p>
+
+<div class="mt-4 space-x-4">
+
+<i class="fab fa-github hover:text-blue-400 cursor-pointer"></i>
+
+<i class="fab fa-linkedin hover:text-blue-400 cursor-pointer"></i>
+
+<i class="fab fa-instagram hover:text-blue-400 cursor-pointer"></i>
+
+</div>
+
+</footer>
+
+</body>
+</html>
